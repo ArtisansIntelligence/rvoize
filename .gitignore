@@ -23,3 +23,4 @@ composer.lock
 /public/dist
 /storage/framework/*
 /storage/logs/*
+/.well-known/*
