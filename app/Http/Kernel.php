@@ -45,7 +45,7 @@ class Kernel extends HttpKernel
             SetCurrentCurrency::class,
             SetLanguageForAdmin::class,
             RequireChangePassword::class,
-//            RedirectToUserDashboard::class
+            RedirectToUserDashboard::class
         ],
         'api' => [
             \App\Http\Middleware\EncryptCookies::class,
