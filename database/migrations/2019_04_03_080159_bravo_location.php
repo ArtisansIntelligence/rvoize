@@ -27,7 +27,7 @@ class BravoLocation extends Migration
             $table->integer('create_user')->nullable();
             $table->integer('update_user')->nullable();
             $table->softDeletes();
-
+            $table->string('parent_type',10)->nullable();
             //Languages
             $table->bigInteger('origin_id')->nullable();
             $table->string('lang',10)->nullable();

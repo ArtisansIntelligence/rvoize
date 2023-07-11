@@ -19,6 +19,7 @@
         protected $fillable      = [
             'name',
             'sub_title',
+            'parent_type',
             'image_id',
             'map_lat',
             'map_lng',

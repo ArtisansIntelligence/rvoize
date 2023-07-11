@@ -342,9 +342,11 @@
                                         <div class="form-group">
                                             <label class="">{{ __('Country') }}</label>
                                             <select name="country" class="form-control" id="country-sms-testing">
-                                                <option value="">{{ __('-- Select --') }}</option>
+                                                <option disabled value="">{{ __('-- Select --') }}</option>
                                                 @foreach (get_country_lists() as $id => $name)
-                                                    <option @if (old('country',$row->country) == $id) selected @endif
+                                                    <option 
+                                                    @if ($id === 'IN') selected @endif
+                                                    {{-- @if (old('country',$row->country) == $id) selected @endif --}}
                                                         value="{{ $id }}">{{ $name }}</option>
                                                 @endforeach
                                             </select>
