@@ -220,7 +220,8 @@ class CompanyController extends FrontendController
                     'to'      => 'company',
                     'name' => $contact->name ?? '',
                     'avatar' => '',
-                    'link' => route("company.admin.myContact"),
+                    // 'link' => route("company.admin.myContact"),
+                    'link' => route("user.my-contact"),
                     'type' => 'contact_form',
                     'message' => __(':name have sent a contact to you', ['name' => $contact->name ?? ''])
                 ];

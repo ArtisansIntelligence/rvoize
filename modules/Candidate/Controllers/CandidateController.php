@@ -206,7 +206,8 @@ class CandidateController extends FrontendController
                     'to'      => 'candidate',
                     'name' => $contact->name ?? '',
                     'avatar' => '',
-                    'link' => route("candidate.admin.myContact"),
+                    // 'link' => route("candidate.admin.myContact"),
+                    'link' => route("user.my-contact"),
                     'type' => 'apply_job',
                     'message' => __(':name have sent a contact to you', ['name' => $contact->name ?? ''])
                 ];
