@@ -536,6 +536,20 @@
                                                     <input type="text" __name__="education[__number__][from]"
                                                         class="form-control" value=""
                                                         placeholder="{{ __('From') }}">
+
+                                                        
+                                                        {{-- <select class="form-control" __name__="education[__number__][from]">
+                                                            <option disabled selected value="">{{ __('From') }}</option>
+                                                            @php
+                                                                $currentYear = date("Y");
+                                                                $year = $currentYear - 1;
+                                                                $max = $year - 100;
+                                                            @endphp
+                                                            <option value="Present">Present</option>
+                                                            @for ($year; $year >= $max; $year--)
+                                                                <option value="{{$year}}">{{$year}}</option>
+                                                            @endfor
+                                                        </select> --}}
                                                 </div>
                                                 <div class="col-md-1">
                                                     <input type="text" __name__="education[__number__][to]"
